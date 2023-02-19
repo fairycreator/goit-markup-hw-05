@@ -76,9 +76,9 @@ body {
   background: #4d5ae5;
   border-radius: 4px;
   border: none;
-  transition-property: transform;
+
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+
   transition-duration: 250ms;
 }
 
@@ -99,6 +99,10 @@ body {
   letter-spacing: 0.04em;
   color: var(--background-color);
   display: block;
+
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition-duration: 250ms;
 }
 
 /*header*/
@@ -135,6 +139,10 @@ body {
   text-transform: uppercase;
 
   margin-right: 76px;
+
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition-duration: 250ms;
 }
 
 .logo:hover,
@@ -180,9 +188,8 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
 
-  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+
   transition-duration: 250ms;
 }
 
@@ -203,9 +210,9 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  transition-property: transform;
+
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+
   transition-duration: 250ms;
 }
 
@@ -368,6 +375,10 @@ body {
   display: flex;
   justify-content: center;
   gap: 24px;
+
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition-duration: 250ms;
 }
 
 .team-soc-item {
@@ -387,9 +398,8 @@ body {
   background-color: var(--bg-soc);
   color: #ffffff;
 
-  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+
   transition-duration: 250ms;
 }
 
@@ -433,9 +443,8 @@ body {
   justify-content: center;
   color: #8e8f99;
 
-  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+
   transition-duration: 250ms;
 }
 
@@ -514,9 +523,8 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
 
-  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+
   transition-duration: 250ms;
 }
 
@@ -713,15 +721,21 @@ body {
 .modal-close {
   width: 24px;
   height: 24px;
-  background: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #e7e9fc;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: auto;
   padding: 0;
+  cursor: pointer;
 }
+
+/*.modal-close:is(:hover, :focus) {
+  background: #404bbf;
+  border-radius: 4px;
+}*/
 
 .is-hidden {
   opacity: 0;
